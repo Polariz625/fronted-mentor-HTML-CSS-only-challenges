@@ -22,7 +22,7 @@ Users should be able to:
 
 [desktop view](https://github.com/Polariz625/fronted-mentor-HTML-CSS-only-challenges/blob/gh-pages/single-price-grid-component-master/screenshot-solution/Screenshot%202025-04-26%20at%2019-54-43%20Frontend%20Mentor%20Single%20Price%20Grid%20Component.png)
 
-[mobile view](https://github.com/Polariz625/fronted-mentor-HTML-CSS-only-challenges/blob/gh-pages/single-price-grid-component-master/screenshot-solution/Screenshot%202025-04-26%20at%2019-54-56%20Frontend%20Mentor%20Single%20Price%20Grid%20Component.png)
+[mobile view](./screenshot-solution/Screenshot%202025-04-26%20at%2019-54-56%20Frontend%20Mentor%20Single%20Price%20Grid%20Component.png)
 
 ### Links
 
