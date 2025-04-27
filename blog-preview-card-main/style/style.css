@@ -1,0 +1,114 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* resetar el espacio entre los elementos */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Figtree;
+	src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+:root {
+	--Yellow: hsl(47, 88%, 63%);
+
+	--White: hsl(0, 0%, 100%);
+
+	--Gray-500: hsl(0, 0%, 42%);
+
+	--Gray-950: hsl(0, 0%, 7%);
+
+	--font-figtree: "Figtree", sans-serif;
+}
+
+body {
+	background-color: var(--Yellow);
+
+	font-family: var(--font-figtree);
+}
+
+.tarjeta {
+	background-color: white;
+	width: 327px;
+	padding: 20px;
+	border-radius: 20px;
+	border: 1px solid var(--Gray-950);
+	box-shadow: 10px 10px var(--Gray-950);
+}
+
+.imagen-tarjeta {
+	width: 100%;
+	border-radius: 12px;
+	margin-bottom: 24px;
+}
+
+.tarjeta-contenedor {
+	color: var(--Gray-950);
+
+	/* esto centra los items de un contenedor arriba al centro */
+	display: flex;
+	justify-content: center;
+
+	/* esto termina de centrar los items de un contenedor en el centro segun el vh */
+	align-items: center;
+	min-height: 100vh;
+}
+
+.etiqueta-progreso {
+	background-color: var(--Yellow);
+	display: inline-block;
+	padding: 4px 12px;
+	font-weight: 800;
+	margin-bottom: 12px;
+	border-radius: 4px;
+}
+
+.fecha-tarjeta {
+	font-size: 0.75rem;
+	margin-bottom: 16px;
+}
+
+.titulo-tarjeta {
+	font-size: 1.25rem;
+	font-size: 800;
+	margin-bottom: 16px;
+}
+
+.titulo-tarjeta:hover {
+	color: var(--Yellow);
+	cursor: pointer;
+}
+
+.descripcion-tarjeta {
+	color: var(--Gray-500);
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin-bottom: 24px;
+}
+
+.contenedor-perfil {
+	/* para que los elementos se pongan uno al lado del otro */
+	display: flex;
+
+	/* para que el h3 se ponga al centro del contenedor verticalmente */
+	align-items: center;
+}
+
+.contenedor-perfil img {
+	width: 32px;
+	margin-right: 16px;
+}
+
+.contenedor-perfil h3 {
+	font-size: 0.875rem;
+}

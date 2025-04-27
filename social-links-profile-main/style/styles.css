@@ -1,0 +1,120 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* *custom properties */
+@font-face {
+	font-family: "inter";
+	src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf");
+}
+
+:root {
+	--Green: hsl(75, 94%, 57%);
+
+	--White: hsl(0, 0%, 100%);
+
+	--Grey-700: hsl(0, 0%, 20%);
+	--Grey-800: hsl(0, 0%, 12%);
+	--Grey-900: hsl(0, 0%, 8%);
+
+	--paragraph-font-size: 0.875rem;
+	--font-family: "inter", sans-serif;
+
+  --margin-bottom: 1rem;
+  --bottom-gap: 1rem;
+}
+
+
+
+/* *styling */
+body {
+	background-color: var(--random);
+	font-family: var(--primary-font);
+	background-color: var(--Grey-900);
+  color: var(--White);
+}
+
+
+
+h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p,
+a{
+  font-size: var(--paragraph-font-size);
+}
+
+h1{
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  gap: var(--bottom-gap);
+}
+
+.socials a{
+  display: inline-block;
+  background-color: var(--Grey-700);
+  padding: 0.8rem;
+  border-radius: 7px;
+  text-decoration: none;
+  color: var(--White);
+  font-weight: bold;
+}
+
+.socials a:hover{
+  background-color: var(--Green);
+  color: var(--Grey-900);
+  transition: all 0.3s ease-in-out;
+}
+
+.socials a:last-child{
+  margin-block-end: 0;
+}
+
+.profile-card {
+	background-color: var(--Grey-800);
+	width: clamp(280px, 90vw, 320px);
+  padding: clamp(1rem, 5vw, 1.7rem);
+  border-radius: 10px;
+	margin-inline: auto;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.user-location{
+  margin-block-end: var(--margin-bottom);
+  color: var(--Green);
+  font-weight: bold;
+}
+
+.user-description{
+  margin-block-end: var(--margin-bottom);
+}
+
+.user-personal-info img {
+	width: 80px;
+	border-radius: 50%;
+  margin-block-end: var(--margin-bottom);
+
+}

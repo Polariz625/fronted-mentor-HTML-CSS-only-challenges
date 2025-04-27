@@ -1,0 +1,217 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* *custom properties */
+@font-face {
+	font-family: "league";
+	src: url("../assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
+		format("truetype");
+}
+
+:root {
+	/* Primary Colors */
+	--very-dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsl(333, 80%, 67%);
+
+	/* Neutral Colors */
+	--dark-grayish-magenta: hsl(303, 10%, 53%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+
+	/* font */
+	--font-family: "league", sans-serif;
+	--font-size: 15px;
+}
+
+/* *styling */
+body {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	background-color: var(--white);
+}
+
+h1,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.social-proof-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	padding: 1rem;
+	max-width: 1100px;
+}
+
+.product-description {
+	display: grid;
+	/* flex-direction: column; */
+	gap: 1rem;
+	text-align: center;
+}
+
+.product-description h1 {
+	font-size: 1.8rem;
+	padding: 0 3rem;
+	color: var(--very-dark-magenta);
+}
+
+.product-description p {
+	color: var(--dark-grayish-magenta);
+	line-height: 1.3;
+}
+
+.ratings {
+	display: grid;
+	/* flex-direction: column; */
+	gap: 1rem;
+	text-align: center;
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.4rem;
+	padding: 1rem;
+	background-color: var(--light-grayish-magenta);
+	border-radius: 0.5rem;
+	color: var(--very-dark-magenta);
+	font-weight: bold;
+}
+
+.stars svg {
+	transform: scale(0.8);
+}
+
+/* ****** */
+.testimonies {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.testimony {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	padding: 2rem;
+	background-color: var(--very-dark-magenta);
+	color: var(--white);
+	border-radius: 0.5rem;
+}
+
+.user-profile {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.user-profile img {
+	width: 35px;
+	height: auto;
+	border-radius: 50%;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.user-name {
+	font-weight: bold;
+}
+
+.user-level {
+	color: var(--soft-pink);
+	font-weight: bold;
+}
+
+.user-testimony {
+	line-height: 1.3;
+}
+
+@media (width > 880px) {
+	.product-description {
+		grid-area: product-description;
+		text-align: left;
+		padding-inline-end: 6rem;
+	}
+
+	.ratings {
+		grid-area: ratings;
+		text-align: right;
+		padding-block: 1.5rem;
+	}
+
+	.testimonies {
+		grid-area: testimonies;
+	}
+
+	.social-proof-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"product-description ratings"
+			"testimonies testimonies";
+	}
+
+	.product-description h1 {
+		padding: 0;
+		font-size: 3rem;
+	}
+
+	.ratings .rating:nth-child(1) {
+		justify-self: start;
+	}
+
+	.ratings .rating:nth-child(2) {
+		justify-self: center;
+	}
+
+	.ratings .rating:nth-child(3) {
+		justify-self: end;
+	}
+
+	.rating {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.testimonies {
+		display: flex;
+		flex-direction: row;
+		height: 220px;
+		margin-block-start: 1rem;
+	}
+
+	.testimonies .testimony:nth-child(1) {
+		align-self: start;
+	}
+
+	.testimonies .testimony:nth-child(2) {
+		align-self: center;
+	}
+
+	.testimonies .testimony:nth-child(3) {
+		align-self: end;
+	}
+}

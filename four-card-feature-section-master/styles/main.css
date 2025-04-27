@@ -1,0 +1,189 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* *curtom properties */
+@font-face {
+	font-family: "poppins-200";
+	src: url("../assets/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppins-400";
+	src: url("../assets/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppins-600";
+	src: url("../assets/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+:root {
+	/* Primary Colors */
+	--red: hsl(0, 78%, 62%);
+	--cyan: hsl(180, 62%, 55%);
+	--orange: hsl(34, 97%, 64%);
+	--blue: hsl(212, 86%, 64%);
+
+	/* Neutral Colors */
+	--grey-500: hsl(234, 12%, 34%);
+	--grey-400: hsl(212, 6%, 44%);
+	--white: hsl(0, 0%, 100%);
+
+	/* fonts */
+	--poppins-200: "poppins-200";
+	--poppins-400: "poppins-400";
+	--poppins-600: "poppins-600";
+	--font-size: 15px;
+
+	/* card shadow */
+	--card-shadow: 0px 10px 20px rgba(186, 202, 231, 0.473);
+
+	/* icon size */
+	--card-icon-size: 60px;
+}
+
+/* *styling */
+body {
+	font-size: var(--font-size);
+	background-color: rgba(223, 225, 233, 0.342);
+  margin-block: 0;
+}
+
+img {
+	display: block;
+	width: var(--card-icon-size);
+	height: auto;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	background-color: var(--white);
+	padding: 1.5rem;
+	padding-block-end: calc(1.5rem - 4px);
+	box-shadow: var(--card-shadow);
+	border-radius: 0.5rem;
+}
+
+.card p {
+	font-family: var(--poppins-400);
+	color: var(--grey-400);
+}
+
+.card h2 {
+	font-family: var(--poppins-600);
+	font-size: 1.1rem;
+}
+
+.card-icon {
+	align-self: flex-end;
+	padding-block: 1rem;
+}
+
+.supervisor {
+	border-top: solid 4px var(--cyan);
+}
+
+.team-builder {
+	border-top: solid 4px var(--red);
+}
+
+.karma {
+	border-top: solid 4px var(--orange);
+}
+
+.calculator {
+	border-top: solid 4px var(--blue);
+}
+
+.product-section {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	padding: 1rem;
+	max-width: 355px;
+}
+
+.product-overview {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	text-align: center;
+	margin-block-end: 2rem;
+}
+
+.product-overview h1 {
+	font-family: var(--poppins-200);
+	color: var(--grey-400);
+	font-size: clamp(1.5rem, 3.3vw, 2rem);
+}
+
+.product-overview p {
+	font-family: var(--poppins-400);
+	color: var(--grey-400);
+}
+
+.product-overview span {
+	font-family: var(--poppins-600);
+	color: var(--grey-500);
+	display: block;
+}
+
+@media (width > 800px) {
+	.product-section {
+		max-width: 1090px;
+	}
+
+	.product-overview {
+		grid-area: overview;
+		padding-inline: clamp(5rem, 22vw, 25rem);
+		margin-block-end: 1rem;
+	}
+
+	.supervisor {
+		grid-area: supervisor;
+	}
+
+	.team-builder {
+		grid-area: builder;
+	}
+
+	.karma {
+		grid-area: karma;
+	}
+
+	.calculator {
+		grid-area: calculator;
+	}
+
+	.product-section {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"overview overview overview"
+			"supervisor builder calculator"
+			"supervisor karma calculator";
+		align-items: center;
+	}
+}

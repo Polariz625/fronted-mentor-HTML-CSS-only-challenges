@@ -1,0 +1,149 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* *custom properties */
+@font-face {
+  font-family: "work-sans-italic";
+  src: url("../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "work-sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf") format("ttf");
+}
+
+:root{
+  --White: hsl(0, 100%, 100%);
+  --Purple-100: hsl(275, 100%, 97%);
+  --Purple-600: hsl(292, 16%, 49%);
+  --Purple-950: hsl(292, 42%, 14%);
+
+  --work-sans: "work-sans", sans-serif;
+  --work-sans-italic: "work-sans-italic", sans-serif;
+  --title-font-size: 2.2rem;
+  --details-hover-color: hsl(300, 100%, 25%);
+  --line-height: 1.7;
+  --parragraph-font-size: 0.8rem;
+  --parragraph-color: rgba(58, 41, 75, 0.548);
+  --parragraph-weight: 400;
+
+  --star-icon-size: 27px;
+
+  --desktop-bg-img: url("../assets/images/background-pattern-desktop.svg");
+  --mobile-bg-img: url("../assets/images/background-pattern-mobile.svg");
+  --open-summary-icon: url("../assets/images/icon-minus.svg");
+  --close-summary-icon: url("../assets/images/icon-plus.svg");
+
+}
+
+/* *styling */
+body{
+  background-image: var(--mobile-bg-img);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Purple-100);
+  font-family: var(--work-sans);
+  
+  @media (width > 375px) {
+    background-image: var(--desktop-bg-img);
+  }
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 95%;
+}
+
+.accordion{
+  width: clamp(300px, 95vw, 510px);
+  display: grid;
+  background-color: white;
+  padding: clamp(1rem, 6vw, 2rem);
+  border-radius: 1rem;
+
+
+}
+
+.accordion-header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block-end: 0.4rem;
+}
+
+.accordion-header img{
+  width: var(--star-icon-size);
+}
+
+.accordion details:last-child{
+  padding-block-end: 0;
+}
+
+h1{
+  color: black;
+  margin: 0;
+  font-size: var(--title-font-size);
+}
+
+details{
+  padding-block: 1rem;
+  width: 100%;
+  background-color: white;
+  margin-inline: auto;
+  border-bottom: thin solid rgb(247, 247, 247);
+}
+
+details:last-child{
+  border-bottom: none;
+}
+
+details > summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+
+  &:hover{
+    color: var(--details-hover-color);
+  }
+}
+
+details > p {
+  background-color: white;
+  font-size: var(--parragraph-font-size);
+  line-height: var(--line-height);
+  font-weight: var(--parragraph-weight);
+  color: var(--parragraph-color);
+}
+
+/* *hiding the default marker */
+summary::marker {
+  content: none; /* Hide the default marker in other browsers */
+}
+
+/* *adding new marker when details is closed */
+summary::after {
+  content: var(--close-summary-icon);
+}
+
+/* *adding new marker when details is open */
+details[open] summary::after {
+  content: var(--open-summary-icon);
+}
