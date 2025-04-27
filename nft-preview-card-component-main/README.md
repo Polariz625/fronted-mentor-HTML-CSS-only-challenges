@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-component-solution-with-css-only-pJuFt8hJZc)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-NFT-preview-card-component/nft-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/nft-preview-card-component-main/)
 
 ## My process
 
