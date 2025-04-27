@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-card-solution-with-flexbox-oIDz2CyQlU)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-order-summary-card/order-summary-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/order-summary-component-main/)
 
 ### Built with
 

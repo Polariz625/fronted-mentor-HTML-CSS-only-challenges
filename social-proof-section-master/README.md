@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/social-proof-section-solution-with-flex-and-grid-E9OmLcagpE)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-social-proof-section/social-proof-section-master/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/social-proof-section-master/)
 
 ### Built with
 

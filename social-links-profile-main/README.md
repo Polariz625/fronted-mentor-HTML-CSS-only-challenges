@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/social-links-profile-challenge-with-flex-N8xG8iEjOg)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-social-links-profile/social-links-profile-main)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/social-links-profile-main/)
 
 ## My process
 I first started extructuring the HTML and CSS to create the layout. After that, I was thinking about using grid for the layout, but at the end I went with flexbox.

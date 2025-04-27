@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-with-flexbox-LXksLL2rPG)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-results-summary-component/results-summary-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/results-summary-component-main/)
 
 ## My process
 

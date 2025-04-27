@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/four-card-feature-section-solution-with-flex-and-grid-u8F_0uj8Ve)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-Four-card-feature-section/four-card-feature-section-master/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/four-card-feature-section-master/)
 
 ### Built with
 

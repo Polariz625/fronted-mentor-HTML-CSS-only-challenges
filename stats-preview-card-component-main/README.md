@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/stats-preview-card-component-solution-with-flex-and-grid-HUnZrbJaW3)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-stats-preview-card/stats-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/stats-preview-card-component-main/)
 
 ### Built with
 

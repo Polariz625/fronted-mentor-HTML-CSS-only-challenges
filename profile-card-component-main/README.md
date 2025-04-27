@@ -17,7 +17,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/profile-card-component-solution-with-flex-hhB1sMPk8L)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-profile-card-component/profile-card-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/profile-card-component-main/)
 
 ### Built with
 

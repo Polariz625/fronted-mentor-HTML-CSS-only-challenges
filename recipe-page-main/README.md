@@ -20,7 +20,7 @@ This project was a challenge from Frontend Mentor. The challenge was to build a 
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-grid-css-and-semantic-html-b-XpTQJNr-)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/Frontend-Mentor-Recipe-page-solution/recipe-page-main)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/recipe-page-main/)
 
 ## My process
 

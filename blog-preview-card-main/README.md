@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-blog-preview-card-solution/blog-preview-card/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/blog-preview-card-main/)
 
 ## My process
 

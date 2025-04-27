@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3-column-preview-card-component-with-grid-css-GNz7MoG6XJ)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-3-col-preview-card/3-column-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/3-column-preview-card-component-main/)
 
 ### Built with
 

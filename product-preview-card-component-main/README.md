@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-solution-KmLrjj6H8n)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/frontend-mentor-product-preview-solution/product-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/product-preview-card-component-main/)
 
 ## My process
 
