@@ -1,4 +1,10 @@
 {
 	"spellright.language": ["en-US-10-1."],
-	"spellright.documentTypes": ["markdown", "latex", "plaintext"]
+	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	}
 }
