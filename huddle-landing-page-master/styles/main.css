@@ -109,7 +109,6 @@ h1 {
 header {
 	padding-inline: clamp(1.7rem, 5vw, 3rem);
 	padding-block-start: 2rem;
-	padding-block-end: 0;
 }
 
 header img {
@@ -183,11 +182,9 @@ footer svg:hover {
 	main {
 		display: grid;
 		grid-template-areas:
-			"header"
 			"info"
 			"footer";
 		max-width: 100%;
-		padding-block: 0;
 		padding-inline: clamp(1.5rem, 5vw, 3rem);
 		gap: 3rem;
 	}
