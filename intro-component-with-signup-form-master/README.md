@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/four-card-feature-section-master/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-only-with-html-and-css-J1AF4OMsvl)
+- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/intro-component-with-signup-form-master/)
 
 ## My process
 
