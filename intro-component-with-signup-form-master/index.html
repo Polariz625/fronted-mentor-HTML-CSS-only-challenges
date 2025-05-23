@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <section>
+
+        <div class="product-description">
+          <h1 class="poppins-bold">Learn to code by watching others</h1>
+
+          <p class="poppins-regular">See how experienced developers solve problems in real-time Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="form-wraper">
+
+          <a class="pay-btn payment-info poppins-regular" href="#">
+            <span class="poppins-bold">Try it free 7 days</span> then 120/mo. thereafter
+          </a>
+
+          <form action="">
+
+            <input type="text" name="First Name" placeholder="First Name" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$" title="only letters please" required>
+
+            <input type="text" name="Last Name" placeholder="Last Name" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$" title="only letters please" required>
+
+            <input type="email" name="Email Address" placeholder="Email Address" pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="invalid email format" required>
+
+            <input type="password" name="password" placeholder="Password" pattern=".+" required>
+
+            <input class="form-btn" type="submit" value="Claim your free trial">
+
+            <p class="poppins-medium">By clicking the button, you are agreeing to our <a href="#" class="poppins-bold">Terms and Services</a></p>
+
+          </form>
+        </div>
+        
+      </section>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

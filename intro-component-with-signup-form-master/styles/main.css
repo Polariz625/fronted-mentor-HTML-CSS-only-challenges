@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* *custom properties */
+:root {
+	/* Primary */
+	--red: hsl(0, 100%, 74%);
+	--green: hsl(154, 59%, 51%);
+
+	/* Accent */
+	--blue: hsl(248, 32%, 49%);
+
+	/* Neutral */
+	--dark-blue: hsl(249, 10%, 26%);
+	--grayish-blue: hsl(246, 25%, 77%);
+}
+
+/* *utilities */
+.poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poppins-medium {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* *personal styling */
+body {
+	background-color: var(--red);
+	background-image: url(../images/bg-intro-mobile.png);
+}
+
+section {
+	color: white;
+	margin: 0.8125rem;
+	max-width: 500px;
+}
+
+h1{
+
+  font-size: clamp(1.6rem, 5vw, 2.81rem);
+
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
+}
+
+.product-description {
+	text-align: center;
+	margin-block-end: 3rem;
+}
+
+.payment-info {
+	text-align: center;
+	background-color: var(--blue);
+	padding: 1rem;
+	padding-inline: 4rem;
+	line-height: 1.5;
+	border-radius: 7px;
+	box-shadow: 0px 7px 2px rgba(26, 26, 26, 0.404);
+}
+
+.form-wraper > a {
+	text-decoration: none;
+	color: white;
+  display: block;
+  margin-block-end: 1.5rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	background-color: white;
+	padding: 1.3rem;
+	border-radius: 7px;
+	box-shadow: 0px 7px 2px rgba(26, 26, 26, 0.404);
+}
+
+form input {
+	padding: 1rem;
+	border: 1px solid rgba(128, 128, 128, 0.164);
+	border-radius: 4px;
+	outline: none;
+	box-shadow: none;
+}
+
+form input::placeholder {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+}
+
+form input:focus {
+	border: 1px solid gray;
+	outline: none;
+}
+
+.form-btn {
+	background-color: var(--green);
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-block-end: 2px solid rgba(0, 128, 0, 0.753);
+	white-space: normal;
+	cursor: pointer;
+
+  transition: scale 0.2s ease-in-out;
+}
+
+.form-btn:hover{
+  scale: 1.03;
+}
+
+form p {
+	color: black;
+	margin: 0;
+	padding-inline: 1rem;
+	text-align: center;
+	font-size: 10px;
+	color: rgba(128, 128, 128, 0.781);
+}
+
+form a {
+	color: var(--red);
+	text-decoration: none;
+}
+
+.pay-btn{
+  transition: scale 0.2s ease-in-out;
+}
+
+.pay-btn:hover{
+  scale: 1.03;
+}
+
+@media (width > 800px) {
+	body {
+		background-image: url(../images/bg-intro-desktop.png);
+	}
+
+	form {
+		padding: 2rem;
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 3rem;
+		max-width: 1000px;
+    
+	}
+
+	.product-description {
+		text-align: left;
+		margin: 0;
+	}
+
+	.product-description h1 {
+		font-size: 45px;
+		line-height: 1;
+		margin-block-end: 25px;
+	}
+}
