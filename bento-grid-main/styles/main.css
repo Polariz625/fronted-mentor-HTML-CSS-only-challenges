@@ -65,6 +65,7 @@ img {
 	display: grid;
 	overflow: hidden;
 	text-wrap: balance;
+	cursor: pointer;
 }
 
 .container {
@@ -256,7 +257,7 @@ img {
 /* ******************* media queries ***************** */
 @media (width > 800px) {
 	.bento-container {
-		width: 800px;
+		width: 750px;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas:
 			"social-media social-media"
@@ -389,6 +390,7 @@ img {
 		text-align: start;
 
 		display: grid;
+		align-items: center;
 		grid-template-columns: 1fr 1fr;
 	}
 
