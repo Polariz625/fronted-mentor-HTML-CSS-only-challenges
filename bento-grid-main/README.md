@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/bento-grid-main/)
+- Solution URL: [frontend mentor](https://www.frontendmentor.io/solutions/bento-grid-IeOyLFRNDq)
+- Live Site URL: [live site URL](https://polariz625.github.io/fronted-mentor-HTML-CSS-only-challenges/bento-grid-main/)
 
 ## My process
 
