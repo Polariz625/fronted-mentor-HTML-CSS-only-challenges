@@ -1,0 +1,403 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family: "DMsans-normal";
+	src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.woff2")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "DMsans-italic";
+	src: url("../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.woff2")
+		format("truetype");
+}
+
+:root {
+	--Purple-100: hsl(254, 88%, 90%);
+	--Purple-500: hsl(256, 67%, 59%);
+	--Yellow-100: hsl(31, 66%, 93%);
+	--Yellow-500: hsl(39, 100%, 71%);
+	--White: hsl(0, 0%, 100%);
+	--Black: hsl(0, 0%, 7%);
+}
+
+/* *************************************************** */
+/* ********************* styling ********************* */
+body {
+	font-family: "DMsans-normal", sans-serif;
+	background-color: rgba(236, 236, 236, 0.726);
+	margin: 32px;
+	font-size: 1.125rem;
+}
+
+h1,
+h2,
+p,
+span {
+	margin: 0;
+	line-height: 1;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.bento-container {
+	display: grid;
+	gap: 1rem;
+	width: 380px;
+	text-wrap: balance;
+	margin-inline: auto;
+}
+
+.card {
+	border-radius: 0.5rem;
+	display: grid;
+	overflow: hidden;
+	text-wrap: balance;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* *************************************************** */
+/* ************ social media with AI card ************ */
+
+.social-media {
+	background-color: var(--Purple-500);
+	padding-inline: 2rem;
+	padding-block: 2rem;
+	color: white;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.social-media h1 {
+	font-size: 3rem;
+	line-height: 1;
+	margin-block-end: 20px;
+	margin-block-start: 0px;
+}
+
+.social-media img {
+	width: 200px;
+	margin-block-end: 0px;
+}
+
+.social-media p {
+	font-size: 1.1rem;
+	margin-block-end: 0px;
+}
+
+.social-media span {
+	color: var(--Yellow-500);
+}
+
+/* *************************************************** */
+/* ************** multiple accounts card ************* */
+.mult-accounts {
+	padding: 1rem;
+	background-color: white;
+}
+
+.mult-accounts h2 {
+	font-size: 1.35rem;
+	margin: 0;
+}
+
+/* *************************************************** */
+/* ******************* schedule card ***************** */
+.schedule {
+	background-color: var(--Yellow-500);
+	padding-inline: 1rem;
+	padding-block-start: 1rem;
+}
+
+.schedule h2 {
+	font-size: 1.37rem;
+	line-height: 1;
+	margin-block-end: 1rem;
+}
+
+.schedule img {
+	width: 68%;
+	margin-block-end: -20px;
+}
+
+/* *************************************************** */
+/* **************** schedule posts card ************** */
+.schedule-posts {
+	background-color: var(--Purple-100);
+	padding: 1rem;
+	padding-block: 1.5rem;
+	text-align: center;
+}
+
+.schedule-posts h2 {
+	margin-block-start: 0;
+	font-size: 1.4rem;
+}
+
+.schedule-posts img {
+	margin-block: 1.5rem;
+}
+
+.schedule-posts p {
+	margin-block-end: 0;
+	font-size: 1rem;
+	text-wrap: balance;
+}
+
+/* *************************************************** */
+/* **************** grow followers card ************** */
+.followers {
+	background-color: var(--Purple-500);
+	text-align: center;
+	color: white;
+	padding: 1rem;
+	padding-inline: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.followers img {
+	width: 200px;
+	margin-block-end: 2rem;
+}
+
+.followers h2 {
+	font-size: 1.5rem;
+	margin-block-end: 0;
+	line-height: 0.9;
+}
+
+/* *************************************************** */
+/* **************** audience growth card ************* */
+.audience {
+	background-color: white;
+	padding: 1.3rem;
+}
+
+.audience h2 {
+	margin-block-start: 0;
+	margin-block-end: 20px;
+	font-size: 2.5rem;
+	line-height: 0.8;
+	font-weight: 500;
+}
+
+.audience img {
+	width: 160px;
+}
+
+.audience span {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+/* *************************************************** */
+/* ********** create and schedule content card ******* */
+.create-content {
+	background-color: var(--Yellow-100);
+	padding: 1.5rem;
+}
+
+.create-content h2 {
+	margin-block-start: 0;
+	margin-block-end: 15px;
+	font-size: 1.8rem;
+	line-height: 1;
+}
+
+.create-content img {
+	width: 60%;
+	/* width: 200px; */
+}
+
+.create-content span {
+	color: var(--Purple-500);
+}
+
+/* *************************************************** */
+/* *************** write AI content card ************* */
+.ai-content {
+	background-color: var(--Yellow-500);
+	padding: 1.3rem;
+}
+
+.ai-content h2 {
+	margin-block-start: 0;
+}
+
+.ai-content img {
+	width: 75%;
+	margin-block-start: 1rem;
+}
+
+/* *************************************************** */
+/* ******************* media queries ***************** */
+@media (width > 800px) {
+	.bento-container {
+		width: 800px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"social-media social-media"
+			"mult-accounts schedule"
+			"schedule-posts audience"
+			"schedule-posts create-content"
+			"followers ai-content";
+	}
+
+	.create-content {
+		grid-area: create-content;
+	}
+
+	.social-media {
+		grid-area: social-media;
+	}
+
+	.mult-accounts {
+		grid-area: mult-accounts;
+	}
+
+	.schedule {
+		grid-area: schedule;
+	}
+
+	.schedule-posts {
+		grid-area: schedule-posts;
+	}
+
+	.audience {
+		grid-area: audience;
+	}
+
+	.followers {
+		grid-area: followers;
+		align-items: flex-end;
+    justify-content: center;
+	}
+
+	.ai-content {
+		grid-area: ai-content;
+	}
+}
+
+@media (width > 1030px) {
+	.bento-container {
+		width: 1000px;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			"create-content social-media social-media schedule-posts"
+			"create-content mult-accounts schedule schedule-posts"
+			"ai-content mult-accounts schedule schedule-posts"
+			"ai-content audience followers followers";
+	}
+
+	.create-content {
+		grid-area: create-content;
+
+		align-items: center;
+	}
+
+	.create-content h2 {
+		margin-block-end: -50px;
+	}
+
+	.create-content img {
+		width: 100%;
+	}
+
+	.social-media {
+		grid-area: social-media;
+	}
+
+	.schedule-posts {
+		grid-area: schedule-posts;
+		text-align: start;
+		padding-block: 2.5rem;
+		padding-inline-start: 1.5rem;
+
+		display: grid;
+		align-content: center;
+	}
+
+	.schedule-posts img {
+		margin-block: 1rem;
+		width: 170%;
+	}
+
+	.mult-accounts {
+		grid-area: mult-accounts;
+	}
+
+	.mult-accounts h2 {
+		padding-inline-end: 3rem;
+	}
+
+	.mult-accounts img {
+		width: 140%;
+	}
+
+	.schedule {
+		grid-area: schedule;
+	}
+
+	.schedule img {
+		width: 100%;
+		margin-block-end: -60px;
+	}
+
+	.ai-content {
+		grid-area: ai-content;
+	}
+
+	.ai-content img {
+		width: 100%;
+		margin-block-start: 2.5rem;
+	}
+
+	.audience {
+		grid-area: audience;
+	}
+
+	.audience h2 {
+		margin: 0;
+	}
+
+	.followers {
+		grid-area: followers;
+		padding: 1rem;
+		text-align: start;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.followers img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.followers h2 {
+		font-size: 1.8rem;
+	}
+}
